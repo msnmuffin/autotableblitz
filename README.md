@@ -1,8 +1,6 @@
 # riichi.wolfdragon.dev Fork Fork
 
-This is a fork of a fork of the original autotable project. Extra features include:
-* Season/Flower/Joker tiles
-* American Mahjong mode
+This is a fork of a fork of riichi.wolfdragon.dev which includes a mode for blitz rules, which is 4 player riichi but with 8 flowers and 50k points.
 
 # Autotable
 
