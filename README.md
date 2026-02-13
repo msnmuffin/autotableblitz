@@ -1,6 +1,6 @@
-# riichi.wolfdragon.dev Fork Fork
+# riichi.wolfdragon.dev Fork
 
-This is a fork of a fork of riichi.wolfdragon.dev which includes a mode for blitz rules, which is 4 player riichi but with 8 flowers and 50k points.
+This is a fork of riichi.wolfdragon.dev that includes a mode for blitz rules, which is 4 player riichi but with 8 flowers and 50k points.
 
 # Autotable
 
