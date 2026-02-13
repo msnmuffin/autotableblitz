@@ -52,6 +52,7 @@ export enum GameType {
   WASHIZU = 'WASHIZU',
   AMERICAN = 'AMERICAN',
   HONGKONG = 'HONGKONG',
+  BLITZ = 'BLITZ',
 }
 
 interface GameTypeMeta {
@@ -70,10 +71,11 @@ export const GAME_TYPES: Record<GameType, GameTypeMeta> = {
   MINEFIELD: { points: '25', seats: [0, 2], joker: false, flower: false, soapFace: false, aka: true },
   WASHIZU: { points: '25', seats: [0, 1, 2, 3], joker: false, flower: false, soapFace: false, aka: true },
   AMERICAN: { points: '25', seats: [0, 1, 2, 3], joker: true, flower: true, soapFace: true, aka: false },
-  HONGKONG: { points: '25', seats: [0, 1, 2, 3], joker: false, flower: true, soapFace: true, aka: false }
+  HONGKONG: { points: '25', seats: [0, 1, 2, 3], joker: false, flower: true, soapFace: true, aka: false },
+  BLITZ: { points: '50', seats: [0, 1, 2, 3], joker: false, flower: true, soapFace: false, aka: true },
 };
 
-export type Points = '5' | '8' | '25' | '30' | '35' | '40' | '100';
+export type Points = '5' | '8' | '25' | '30' | '35' | '40' | '50' | '100';
 
 export interface Conditions {
   gameType: GameType;
@@ -100,6 +102,7 @@ export namespace Conditions {
       'WASHIZU': 'w',
       'AMERICAN': 'am',
       'HONGKONG': 'hk',
+      'BLITZ': 'bt',
     }[ts.gameType];
     let aka = tileMapToString(ts.aka);
     if (ts.aka === undefined || aka === "") {
