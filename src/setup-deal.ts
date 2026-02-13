@@ -299,6 +299,59 @@ export const DEALS: Record<GameType, Partial<Record<DealType, Array<DealPart>>>>
       { roll: 12, ranges: [['wall.1.0', 0, 36], ['wall.1.0', 1, 30], ['wall.1.0', 2, 6], ['wall.6.0', 3, 24]] },
     ],
   },
+
+  BLITZ: {
+    INITIAL: [
+      {
+        ranges: [
+          ['wall.1.0', 0, 35],
+          ['wall.1.0', 1, 35],
+          ['wall.1.0', 2, 35],
+          ['wall.1.0', 3, 35],
+        ]
+      },
+    ],
+    WINDS: [
+      {
+        tiles: [27, 28, 29, 30],
+        ranges: [['hand.5', 0, 4]],
+        rotationIndex: 2,
+      },
+      {
+        ranges: [
+          ['wall.1.0', 0, 35],
+          ['wall.1.0', 1, 35],
+          ['wall.1.0', 2, 35],
+          ['wall.1.0', 3, 35],
+        ],
+      },
+    ],
+    HANDS: [
+      {
+        ranges: [
+          ['hand.0', 0, 12],
+          ['hand.0', 1, 12],
+          ['hand.0', 2, 12],
+          ['hand.0', 3, 12],
+        ],
+        rotationIndex: 2,
+      },
+
+      { roll: 2, ranges: [['wall.9.0', 0, 6], ['wall.1.0', 0, 14], ['wall.16.0', 1, 4], ['wall.1.0', 2, 36], ['wall.1.0', 3, 36]] },
+      { roll: 3, ranges: [['wall.1.0', 0, 36], ['wall.1.0', 1, 12], ['wall.8.0', 1, 6], ['wall.15.0', 2, 6], ['wall.1.0', 3, 36]] },
+      { roll: 4, ranges: [['wall.1.0', 0, 36], ['wall.1.0', 1, 36], ['wall.1.0', 2, 10], ['wall.7.0', 2, 6], ['wall.14.0', 3, 8]] },
+      { roll: 5, ranges: [['wall.13.0', 0, 10], ['wall.1.0', 1, 36], ['wall.1.0', 2, 36], ['wall.1.0', 3, 8], ['wall.6.0', 3, 6]] },
+      { roll: 6, ranges: [['wall.1.0', 0, 6], ['wall.5.0', 0, 6], ['wall.12.0', 1, 12], ['wall.1.0', 2, 36], ['wall.1.0', 3, 36]] },
+
+      { roll: 7, ranges: [['wall.1.0', 0, 36], ['wall.1.0', 1, 4], ['wall.4.0', 1, 6], ['wall.11.0', 2, 14], ['wall.1.0', 3, 36]] },
+
+      { roll: 8, ranges: [['wall.1.0', 0, 36], ['wall.1.0', 1, 36], ['wall.1.0', 2, 2], ['wall.3.0', 2, 6], ['wall.10.0', 3, 16]] },
+      { roll: 9, ranges: [['wall.9.0', 0, 18], ['wall.1.0', 1, 36], ['wall.1.0', 2, 36], ['wall.1.0', 3, 6]] },
+      { roll: 10, ranges: [['wall.1.0', 0, 6], ['wall.8.0', 1, 20], ['wall.1.0', 2, 36], ['wall.1.0', 3, 34]] },
+      { roll: 11, ranges: [['wall.1.0', 0, 32], ['wall.1.0', 1, 6], ['wall.7.0', 2, 22], ['wall.1.0', 3, 36]] },
+      { roll: 12, ranges: [['wall.1.0', 0, 36], ['wall.1.0', 1, 30], ['wall.1.0', 2, 6], ['wall.6.0', 3, 24]] },
+    ],
+  },
 };
 
 export const POINTS: Record<Points, Array<number>> = {
@@ -309,5 +362,6 @@ export const POINTS: Record<Points, Array<number>> = {
   '30': [2, 1, 3, 4, 1, 5],
   '35': [2, 2, 2, 4, 1, 5],
   '40': [2, 2, 3, 4, 1, 5],
+  '50': [2, 3, 3, 4, 1, 5],
   '100': [2, 7, 5, 4, 1, 5],
 };
